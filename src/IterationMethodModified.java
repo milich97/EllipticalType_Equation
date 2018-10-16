@@ -32,7 +32,7 @@ public class IterationMethodModified extends Main {
         System.out.println("k      ||F-AU(k)||   rel.d.   ||U(k)-u*||   rel.error   ||U(k)-U(k-1)||   post.est.   app.spectral radius");
 
         ArrayList<Double> s = new ArrayList();
-        while ((norm2(U1, U_acc) / norm2(Ustart, U_acc)) > eps&&k<200) {
+        while ((norm2(U1, U_acc) / norm2(Ustart, U_acc)) > eps&&k<n+1) {
             k++;
 
 

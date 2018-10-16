@@ -15,7 +15,7 @@ public class Main {
     protected static double[][] F;
 
     public static void main(String[] args) {
-        int N = 5;
+        int N = 10;
 
         h = 1 / ((double) N);
 
@@ -51,11 +51,11 @@ public class Main {
 
         System.out.println("Мера аппроксимации ДУ на точном решении: " + r(norm1(U_acc, F)));
         System.out.println("Норма невязки нулевого приближения: " + r(norm1(U0, F)));
-        new IterationMethodModified(U0);
-        new Seidel(U0);
-        new Relax(U0);
-        new Chebyshev(U0);
-        new VariableDirectionsMethod(U0);
+//        new IterationMethodModified(U0);
+//        new Seidel(U0);
+//        new Relax(U0);
+        new VariableTriangleMethod(U0);
+//        new VariableDirectionsMethod(U0);
 
     }
 
